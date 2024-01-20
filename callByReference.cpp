@@ -18,6 +18,12 @@ void swap(int *x, int *y){
     *y = temp;
 }
 
+// To achieve this we can use address of operater 
+void swapUsingAddress(int &x, int &y){
+    int temp = x;
+    x = y;
+    y = temp;
+}
 int main(){
 
     int x = 10;
@@ -30,7 +36,11 @@ int main(){
     cout<<"x: "<<x<<" y: "<<y<<endl;
 
     // swap on passing pointers
-    swap(ptrx, ptry);
+    // swap(ptrx, ptry);
+    // cout<<"x: "<<x<<" y: "<<y<<endl;
+
+    swapUsingAddress(x, y);
     cout<<"x: "<<x<<" y: "<<y<<endl;
+
     return 0;
 }
