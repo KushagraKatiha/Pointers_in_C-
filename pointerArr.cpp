@@ -29,3 +29,6 @@ int main(){
     cout<<*(ptr+1)<<endl;
     return 0;
 }
+
+// *ptr++ this will increment the pointer
+// (*ptr)++ this will increment the value inside the pointer
